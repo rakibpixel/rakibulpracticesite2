@@ -1,0 +1,373 @@
+@font-face{
+    font-family: "ami";
+    src: url("../font/ami.ttf") format("truetype")
+}
+@font-face{
+    font-family: "rakib";
+    src: url("../font/rakib.ttf") format("truetype")
+}
+
+
+
+
+
+/* ✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴
+    ✴<<< COMMON CSS ALL >>>✴
+✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴ */
+*{margin: 0; padding: 0;}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: ami;
+    font-style: normal;
+    text-transform: capitalize;
+}
+
+img{
+    max-width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+ul{
+    list-style: none;
+    text-transform: uppercase !important;
+}
+
+input:focus, textarea{outline: none;}
+button:focus{outline: none;}
+
+p{
+    font-size: 16px;
+    font-family:rakib;
+}
+
+a{
+    text-decoration: none;
+    color: #4d4d4d;
+    font-family: Eras ITC;
+    cursor: pointer;
+}
+
+.text_center{ text-align: center;}
+.text_left{text-align: left;}
+.text_right{text-align: right;}
+
+
+.floatClearFix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+/* ✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴
+    ✴<<< COMMON CSS END >>>✴
+✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴ */
+
+
+
+/* ✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴
+        ✴<<< CONTAINER >>>✴
+✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴ */
+#container{
+    width: 1060px;
+    box-sizing:border-box;
+    padding:0px 10px;
+    margin:0 auto;
+}
+
+
+
+/* ✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴
+        ✴<<< HEADER >>>✴
+✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴ */
+#main_header{
+    background: #0061a1;
+}
+
+.main_header_wrapper{
+    width: 100%;
+ 
+}
+
+.main_header_wrapper .logo_area{
+    width: 30%;
+    float: left;
+}
+
+.main_header_wrapper .logo_area img{
+    width: 150px;
+    display: block;
+    margin-top: -13px;
+}
+
+
+/* ✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴
+        ✴<<< MAIN MENU >>>✴
+✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴ */
+.main_header_wrapper .main_menu{
+    width: 70%;
+    float: right;
+    text-align: right;
+}
+
+.main_header_wrapper .main_menu ul{
+
+}
+
+.main_header_wrapper .main_menu ul li{
+    display: inline-block;    
+    margin-left: -4px;
+    position: relative;
+    border-right: 1px solid #ddd;
+    }
+
+.main_header_wrapper .main_menu ul li:last-child{
+    border-right: none;
+    }
+    
+    .main_header_wrapper .main_menu ul li a{    
+    color: white;    
+    display: block;    
+    padding: 15px 25px;    
+    transition: .4s ease;
+    }
+
+.main_header_wrapper .main_menu ul li :last-child a{   
+    border-right:none;
+}
+
+.main_header_wrapper .main_menu ul li:hover >a{    
+    background: #023d64;
+}
+
+
+/* ✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴
+    ✴<<< DROPDOWN MENU >>>✴
+✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴ */
+.main_header_wrapper .main_menu ul li ul{   
+    width: 0px;
+    transform-origin: top;
+    transform: scale(0);
+    background: #023d64;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s ease;
+}
+
+.main_header_wrapper .main_menu ul li:hover ul{   
+    width: 200px;
+    opacity: 1;
+    transform: scale(1);
+    visibility: visible;
+}
+
+
+
+
+.main_header_wrapper .main_menu ul li ul li{   
+    display: block;
+    margin-left: 0px;
+
+}
+
+.main_header_wrapper .main_menu ul li ul li a{   
+    border-top: 1px solid #ddd;
+    transition: .4s ease;
+}
+
+.main_header_wrapper .main_menu ul li ul li a:hover{   
+    background: #0061a1;
+}
+
+
+/* ✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴
+    ✴<<< SLIDER >>>✴
+✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴ */
+#main_slider{
+    background-image: url(photo/friends-3175059_1920.jpg);
+    padding: 250px 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#main_slider .content{
+    
+}
+
+#main_slider h1{
+    font-size: 40px;
+    color: white;
+    background: #613030;
+    display: inline-block;
+    margin-bottom: 10px;    
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#main_slider h2{
+    font-size: 30px;
+    color: white;
+    background: #a123439c;
+    width: 345px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+
+/* ✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴
+    ✴<<<ABBOUT AS >>>✴
+✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴ */
+section#about_area {
+    margin: 70px 0px 15px 0px;
+}
+
+.about_area_wrapper h2{
+    font-size: 38px;    
+    margin-bottom: 20px;
+}
+    
+.about_area_wrapper p{    
+    max-width: 570px;    
+    margin: auto;    
+    text-align: center;
+}
+
+
+
+/* ✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴
+    ✴<<< SERVICE AREA >>>✴
+✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴ */
+.service_area_wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+
+.service_area_wrapper .service_item{
+    flex-basis: 30%;
+    width: 300px;
+    box-sizing: border-box;
+    padding: 40px 10px;
+    border: 1px solid #ddd;
+    margin-top: 30px;
+}
+
+.service_area_wrapper .service_item span{
+    display: inline-block;
+    background: #389BDD;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: white;
+    border-radius: 15px 0px;
+}
+
+
+/* ✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴
+    ✴<<< BLOG---CONTENT >>>✴
+✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴ */
+#bloger_area{
+    margin-top: 70px;
+    background: #fbfbfbe6;
+}
+
+.bloger_area_wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 0px;
+}
+
+.blog_item_wrapper{
+    flex-basis: 70%;
+    margin-right: 30px;
+}
+
+.bloger_area_wrapper .blog_item_wrapper .blog_item{
+    margin-bottom: 30px;
+}
+
+.bloger_area_wrapper .blog_item_wrapper .blog_item img{
+    max-width: 150px;
+    height: auto;
+    float: left;
+    margin: 0px 10px 5px 0px;
+}
+
+.bloger_area_wrapper .blog_item_wrapper .blog_item p{
+    text-align: justify;
+    color: #2b2828;
+}
+
+.bloger_area_wrapper .sidevar{
+    flex-basis: 30%;
+}
+
+.bloger_area_wrapper .sidevar h2{
+    font-size: 30px;
+    color: #333;
+}
+
+.bloger_area_wrapper .sidevar ul{
+
+}
+
+.bloger_area_wrapper .sidevar ul li{
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+
+/* ✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴
+    ✴<<< FOOTER >>>✴
+✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴ */
+footer{
+    background: #333;
+}
+
+.footer_wrapper{
+    padding: 20PX;
+}
+
+.footer_wrapper .copyright_are{
+    float: left;
+}
+
+.footer_wrapper .copyright_are P{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #8c8c8c;
+}
+
+.footer_wrapper .social_area{
+ float: right;
+}
+
+.footer_wrapper .social_area ul{
+
+}
+
+.footer_wrapper .social_area ul li{
+    display: inline-block;
+    margin-left: -4px;
+}
+
+.footer_wrapper .social_area ul li a{
+    display: block;
+    background: #a09d9d;
+    margin-right: 10px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: #4d4d4d;
+}

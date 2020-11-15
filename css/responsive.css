@@ -1,0 +1,128 @@
+@media all and (max-width:1060px) {
+    #container {
+        width: 100%;
+    }
+}
+
+@media all and (max-width:900px) {
+    .main_header_wrapper .logo_area {
+        width: 100%;
+    }
+    .main_header_wrapper .logo_area img {
+        width: 150px;
+        display: block;
+        margin: 0 auto;
+        padding: 10px 0px;
+    }
+    .main_header_wrapper .main_menu {
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+
+
+
+
+
+@media all and (max-width:670px) {
+    .main_header_wrapper .main_menu ul li {
+        border: none;
+    }
+    .main_header_wrapper .main_menu ul li a {
+        padding: 10px 15px;
+    }
+
+    #main_slider {
+        padding: 150px 0px;
+    }
+
+    #main_slider h1 {
+        font-size: 35px;
+    }
+
+    #main_slider h2 {
+        font-size: 28px;
+        padding: 4px;
+    }
+
+    .service_area_wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .service_area_wrapper .service_item {
+        flex-basis: 100%;
+        width: 71%;
+    }
+
+    .bloger_area_wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .blog_item_wrapper {
+        flex-basis: 100%;
+        margin-right: 0px;
+    }
+
+    .bloger_area_wrapper .sidevar {
+        width: 95%;
+    }
+
+    .bloger_area_wrapper .sidevar h2 {
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .footer_wrapper {
+        padding: 20PX;
+        text-align: center;
+    }
+
+    .footer_wrapper .copyright_are {
+        float: none;
+        margin-bottom: 10px;
+    }
+
+    .footer_wrapper .social_area {
+        float: none;
+    }
+
+}
+
+
+
+@media all and (max-width:515px) {
+    .main_header_wrapper .main_menu ul li a {
+        padding: 10px 5px;
+    }
+
+    #main_slider {
+        padding: 50px 0px;
+    }
+
+
+    #main_slider h1 {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    #main_slider h2 {
+        font-size: 15px;
+        padding: 4px;
+        width: 200px;
+    }
+
+
+    .service_area_wrapper .service_item {
+        width: 98%;
+    }
+
+    .service_area_wrapper .service_item h2 {
+        font-size: 20px;
+    }
+}
